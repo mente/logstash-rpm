@@ -22,6 +22,7 @@ Source5:        logstash.conf
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 Requires:       java >= 1.6.0
+Requires:	zeromq-devel >= 2.1.0
 
 Requires(post): chkconfig initscripts
 Requires(pre):  chkconfig initscripts
