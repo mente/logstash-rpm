@@ -6,14 +6,14 @@
 %define base_install_dir /opt/%{name}
 
 Name:           logstash
-Version:        1.1.9
+Version:        1.1.10
 Release:        1%{?dist}
 Summary:        Logstash is a tool for managing events and logs.
 
 Group:          System Environment/Daemons
 License:        Apache License, Version 2.0
-URL:            http://logstash.net
-Source0:        https://logstash.objects.dreamhost.com/release/%{name}-%{version}-monolithic.jar
+URL:            http://logstash.neti
+Source0:        https://logstash.objects.dreamhost.com/release/%{name}-%{version}-flatjar.jar
 Source1:        logstash.init
 Source2:        logstash.logrotate
 Source3:        logstash.sysconfig
@@ -115,6 +115,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Apr 22 2013 Michael Obster <michael@obster.org> - 1.1.10
+- new upstream version
+
 * Tue Apr 16 2013 Michael Obster <michael@obster.org> - 1.1.9
 - new upstream version
 
