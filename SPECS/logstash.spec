@@ -6,7 +6,7 @@
 %define base_install_dir /opt/%{name}
 
 Name:           logstash
-Version:        1.1.10
+Version:        1.1.12
 Release:        1%{?dist}
 Summary:        Logstash is a tool for managing events and logs.
 
